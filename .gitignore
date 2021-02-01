@@ -39,4 +39,5 @@ build/
 .gradle
 
 ## AngularJS ###
-.angular-1.8.2
+/lib/angular-1.8.2
+/lib/bootstrap-3.4.1-dist
