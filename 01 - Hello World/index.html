@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="app">
+	
+	<head>
+		<meta charset="UTF-8">
+		<title>Sistema Simples</title>
+		
+		<!-- libs -->
+		<script src="../lib/angular-1.8.2/angular.js"></script>
+
+		<!-- scripts -->
+		
+		<script>
+			var app = angular.module("app",[]); //Instancio o m�dulo
+			
+			//Carrego o controller de acordo com o module
+			angular.module("app").controller("appController", function($scope){
+				$scope.message = "Hello World !"
+			});
+		
+		</script>
+		
+	</head>
+	<!-- Chamo a view -->
+	<body>
+		<div ng-controller="appController">
+			{{ message }}
+		</div>
+
+	</body>
+</html>
