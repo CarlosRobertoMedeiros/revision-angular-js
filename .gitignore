@@ -41,3 +41,5 @@ build/
 ## AngularJS ###
 /lib/angular-1.8.2
 /lib/bootstrap-3.4.1-dist
+
+/node_modules
