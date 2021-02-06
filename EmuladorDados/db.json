@@ -1,0 +1,99 @@
+{
+  "contatos": [
+    {
+      "id": 1,
+      "nome": "Carlos Roberto",
+      "telefone": "9999-9999",
+      "data": "2021-01-07",
+      "operadora": {
+        "nome": "Oi",
+        "codigo": 14,
+        "categoria": "Celular"
+      }
+    },
+    {
+      "id": 2,
+      "nome": "Luciene Medeiros",
+      "telefone": "88888-8888",
+      "data": "2021-01-07",
+      "operadora": {
+        "nome": "Vivo",
+        "codigo": 15,
+        "categoria": "Celular"
+      }
+    },
+    {
+      "id": 3,
+      "nome": "Ezequias Alves",
+      "telefone": "7777-7777",
+      "data": "2021-01-07",
+      "operadora": {
+        "nome": "Tim",
+        "codigo": 41,
+        "categoria": "Celular"
+      }
+    },
+    {
+      "nome": "Lucas Pinheiro",
+      "telefone": "5555-5555",
+      "operadora": {
+        "id": 1,
+        "nome": "Oi",
+        "codigo": 14,
+        "categoria": "Celular",
+        "preco": 2
+      },
+      "id": 4
+    },
+    {
+      "nome": "Antonio Nunes",
+      "telefone": "4444-4444",
+      "operadora": {
+        "id": 4,
+        "nome": "GVT",
+        "codigo": 25,
+        "categoria": "Fixo",
+        "preco": 1
+      },
+      "data": "2021-02-06T01:08:49.679Z",
+      "id": 5
+    }
+  ],
+  "operadoras": [
+    {
+      "id": 1,
+      "nome": "Oi",
+      "codigo": 14,
+      "categoria": "Celular",
+      "preco": 2
+    },
+    {
+      "id": 2,
+      "nome": "Vivo",
+      "codigo": 15,
+      "categoria": "Celular",
+      "preco": 1
+    },
+    {
+      "id": 3,
+      "nome": "Tim",
+      "codigo": 41,
+      "categoria": "Celular",
+      "preco": 3
+    },
+    {
+      "id": 4,
+      "nome": "GVT",
+      "codigo": 25,
+      "categoria": "Fixo",
+      "preco": 1
+    },
+    {
+      "id": 5,
+      "nome": "Embratel",
+      "codigo": 21,
+      "categoria": "Fixo",
+      "preco": 2
+    }
+  ]
+}

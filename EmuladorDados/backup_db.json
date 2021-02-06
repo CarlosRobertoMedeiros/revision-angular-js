@@ -1,0 +1,67 @@
+{
+    "contatos": [
+      {
+        "nome": "Carlos Roberto",
+        "telefone":"9999-9999",
+        "data":"2021-01-07",
+        "operadora":{
+          "nome":"Oi",
+          "codigo":14,
+          "categoria":"Celular"
+        }
+      },
+      {
+        "nome": "Luciene Medeiros",
+        "telefone":"88888-8888",
+        "data":"2021-01-07",
+        "operadora":{
+          "nome":"Vivo",
+          "codigo":15,
+          "categoria":"Celular"
+        }
+      },
+      {
+        "nome": "Ezequias Alves",
+        "telefone":"7777-7777",
+        "data":"2021-01-07",
+        "operadora":{
+          "nome":"Tim",
+          "codigo":41,
+          "categoria":"Celular"
+        }
+      }
+    ],
+    "operadoras":[
+      {
+        "nome":"Oi",
+        "codigo":14,
+        "categoria":"Celular",
+        "preco":2
+      },
+      {
+        "nome":"Vivo",
+        "codigo":15,
+        "categoria":"Celular",
+        "preco":1
+      },
+      {
+        "nome":"Tim",
+        "codigo":41,
+        "categoria":"Celular",
+        "preco":3
+      },
+      {
+        "nome":"GVT",
+        "codigo":25,
+        "categoria":"Fixo",
+        "preco":1
+      },
+      {
+        "nome":"Embratel",
+        "codigo":21,
+        "categoria":"Fixo",
+        "preco":2
+      }
+    ]
+}
+  

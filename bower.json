@@ -1,0 +1,24 @@
+{
+  "name": "revision-angular-js",
+  "homepage": "https://github.com/CarlosRobertoMedeiros/revision-angular-js",
+  "authors": [
+    "Carlos Roberto <carlosmedeiroslima@gmail.com>"
+  ],
+  "description": "revisão de sistema angularjs",
+  "main": "index.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.8.2",
+    "angular-locale-pt-br": "^1.3.15",
+    "angular-messages": "^1.8.2",
+    "bootstrap": "3.4.1"
+   
+  }
+}
