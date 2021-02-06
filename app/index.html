@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br" ng-app="ListaTelefonica">
     <head>
+        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Lista Telefônica</title>
@@ -18,6 +19,16 @@
         <!-- controllers -->
         <script src="js/controllers/ListaTelefonicaController.js"></script>
 
+         <!-- services -->
+         <script src="js/services/factory/contatosService.js"></script>
+         <script src="js/services/services/operadorasService.js"></script>
+         <script src="js/services/provider/serialGeneratorService.js"></script>
+         
+         <!-- configurações dos serviços provider -->
+         <script src="js/config/SerialGeneratorConfig.js"></script>
+
+         <!--parametrização de ambiente -->
+         <script src="js/value/configValue.js"></script>
 
     </head>
     <body ng-controller="ListaTelefonicaController">
@@ -28,6 +39,7 @@
             <table ng-show="contatos.length >0" class="table ">
                 <tr>
                     <th></th>
+                    <th>Serial</th>
                     <th><a href="" ng-click="ordenarPor('nome')">Nome</a></th>
                     <th><a href="" ng-click="ordenarPor('telefone')">Telefone</a></th>
                     <th>Data</th>
@@ -36,6 +48,7 @@
                 </tr>
                 <tr ng-class="{selecionado: contato.selecionado}" ng-repeat="contato in contatos | filter:criterioBusca | orderBy:criterioDeOrdenacao:direcaoDaOrdenacao">
                     <td><input type="checkbox" ng-model="contato.selecionado"/></td>
+                    <td>{{contato.serial}}</td>
                     <td>{{contato.nome}}</td>
                     <td>{{contato.telefone}}</td>
                     <td>{{contato.data | date:'dd/MM/yyyy'}}</td>

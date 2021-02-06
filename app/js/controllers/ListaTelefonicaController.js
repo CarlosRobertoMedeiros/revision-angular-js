@@ -1,4 +1,4 @@
-angular.module("ListaTelefonica").controller("ListaTelefonicaController",function($http,$scope){
+angular.module("ListaTelefonica").controller("ListaTelefonicaController",function($http,$scope,contatosService,operadorasService,serialGeneratorService){
     $scope.app = "Lista Telefônica";
     
     $scope.classe = "selecionado";
@@ -14,7 +14,7 @@ angular.module("ListaTelefonica").controller("ListaTelefonicaController",functio
     $scope.operadoras =[];
 
     var carregarContatos = function () {
-        $http.get("http://localhost:3000/contatos")
+        contatosService.getContatos()
             .then(function(response) {
                 $scope.contatos = response.data;
             },function(response){
@@ -23,7 +23,7 @@ angular.module("ListaTelefonica").controller("ListaTelefonicaController",functio
     };
 
     var carregarOperadoras = function () {
-        $http.get("http://localhost:3000/operadoras")
+        operadorasService.getOperadoras()
             .then(function(response) {
                 $scope.operadoras = response.data;
             },function(response){
@@ -33,8 +33,9 @@ angular.module("ListaTelefonica").controller("ListaTelefonicaController",functio
 
     $scope.adicionarContato = function(contato){
         //$scope.contatos.push(angular.copy(contato));
+        contato.serial = serialGeneratorService.generate();
         contato.data = new Date();
-        $http.post("http://localhost:3000/contatos",contato)
+        contatosService.saveContato(contato)
             .then(function(response) {
                 if (response.data){
                     delete $scope.contato;
