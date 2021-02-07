@@ -1,4 +1,4 @@
-angular.module("ListaTelefonica").factory("contatosService", function($http,configValue){
+angular.module("listaTelefonica").factory("contatosService", function($http,configValue){
     //Aqui o JS utiliza Função Fábrica
     var _getContatos = function(){
         return $http.get(configValue.baseUrl + "/contatos");

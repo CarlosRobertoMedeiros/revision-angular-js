@@ -3,7 +3,7 @@
     {
       "id": 1,
       "serial": "",
-      "nome": "Carlos Roberto",
+      "nome": "carlos roberto medeiros de lima",
       "telefone": "9999-9999",
       "data": "2021-01-07",
       "operadora": {
@@ -15,7 +15,7 @@
     {
       "id": 2,
       "serial": "",
-      "nome": "Luciene Medeiros",
+      "nome": "luciene alves medeiros de lima",
       "telefone": "88888-8888",
       "data": "2021-01-07",
       "operadora": {
@@ -27,7 +27,7 @@
     {
       "id": 3,
       "serial": "",
-      "nome": "Ezequias Alves",
+      "nome": "ezequias alves de lima",
       "telefone": "7777-7777",
       "data": "2021-01-07",
       "operadora": {
@@ -35,48 +35,6 @@
         "codigo": 41,
         "categoria": "Celular"
       }
-    },
-    {
-      "telefone": "5555-5555",
-      "operadora": {
-        "id": 5,
-        "nome": "Embratel",
-        "codigo": 21,
-        "categoria": "Fixo",
-        "preco": 2
-      },
-      "nome": "5555-55555",
-      "serial": "/L^\\=V%ST(",
-      "data": "2021-02-06T15:32:28.393Z",
-      "id": 4
-    },
-    {
-      "nome": "adsfasdfsdf",
-      "telefone": "9999-9999",
-      "operadora": {
-        "id": 1,
-        "nome": "Oi",
-        "codigo": 14,
-        "categoria": "Celular",
-        "preco": 2
-      },
-      "serial": "TA^JL;EX)T",
-      "data": "2021-02-06T15:40:21.985Z",
-      "id": 5
-    },
-    {
-      "nome": "asfdasdfasf",
-      "telefone": "85548-8888",
-      "operadora": {
-        "id": 4,
-        "nome": "GVT",
-        "codigo": 25,
-        "categoria": "Fixo",
-        "preco": 1
-      },
-      "serial": "<U.-\",&40/",
-      "data": "2021-02-06T15:47:24.190Z",
-      "id": 6
     }
   ],
   "operadoras": [

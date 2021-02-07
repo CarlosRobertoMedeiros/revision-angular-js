@@ -1,1 +1,1 @@
-angular.module("ListaTelefonica",["ngMessages"]);
+angular.module("listaTelefonica",["ngMessages"]);

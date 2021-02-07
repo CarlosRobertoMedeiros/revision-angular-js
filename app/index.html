@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" ng-app="ListaTelefonica">
+<html lang="pt-br" ng-app="listaTelefonica">
     <head>
         
         <meta charset="UTF-8">
@@ -9,6 +9,7 @@
         <!-- estilos  -->
         <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/app.css">
+        <link rel="stylesheet" type="text/css" href="css/ui.css">
 
         <!-- libs -->
         <script src="../bower_components/angular/angular.js"></script>
@@ -27,14 +28,24 @@
          <!-- configurações dos serviços provider -->
          <script src="js/config/SerialGeneratorConfig.js"></script>
 
+         <!-- filters --> 
+         <script src="js/filters/nameFilter.js"></script>
+         <script src="js/filters/ellipsisFilter.js"></script>
+
+         <!--directives -->
+         <script src="js/directives/uiAlertDirective.js"></script>
+
          <!--parametrização de ambiente -->
          <script src="js/value/configValue.js"></script>
 
     </head>
-    <body ng-controller="ListaTelefonicaController">
+    <body ng-controller="listaTelefonicaController">
         <div class="jumbotron">
             <h3>{{app}}</h3>
-
+            
+            <div ui-alert></div>
+            
+           
             <input class="form-control" type="text" ng-model="criterioBusca" placeholder="O que você está buscando">
             <table ng-show="contatos.length >0" class="table ">
                 <tr>
@@ -49,7 +60,7 @@
                 <tr ng-class="{selecionado: contato.selecionado}" ng-repeat="contato in contatos | filter:criterioBusca | orderBy:criterioDeOrdenacao:direcaoDaOrdenacao">
                     <td><input type="checkbox" ng-model="contato.selecionado"/></td>
                     <td>{{contato.serial}}</td>
-                    <td>{{contato.nome}}</td>
+                    <td>{{contato.nome | name | ellipsis:10}}</td>
                     <td>{{contato.telefone}}</td>
                     <td>{{contato.data | date:'dd/MM/yyyy'}}</td>
                     <td>{{contato.operadora.nome}}</td>

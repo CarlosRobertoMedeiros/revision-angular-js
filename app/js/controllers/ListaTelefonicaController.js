@@ -1,4 +1,4 @@
-angular.module("ListaTelefonica").controller("ListaTelefonicaController",function($http,$scope,contatosService,operadorasService,serialGeneratorService){
+angular.module("listaTelefonica").controller("listaTelefonicaController",function($http,$scope,contatosService,operadorasService,serialGeneratorService){
     $scope.app = "Lista Telefônica";
     
     $scope.classe = "selecionado";
@@ -27,7 +27,8 @@ angular.module("ListaTelefonica").controller("ListaTelefonicaController",functio
             .then(function(response) {
                 $scope.operadoras = response.data;
             },function(response){
-            console.log(response);
+            //console.log(response);
+            $scope.error = "Não foi possível carregar os dados !";
             });
     };
 
