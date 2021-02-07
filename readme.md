@@ -12,7 +12,7 @@ Revisão Angular Js
 	Para Execução do sistema
 	
 		1 - Subir o Json-Server(Simulador de Rest)
-			json-server --watch EmuladorDados\db.json
+			json-server --watch infra\db.json
 		2 - Subir o HTTP-Server(Emulador de Front End)
 			http-server 
 			Obs.: Realizar essa comando dentro do diretório da aplicação
