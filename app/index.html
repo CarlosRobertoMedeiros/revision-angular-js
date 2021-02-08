@@ -34,6 +34,7 @@
 
          <!--directives -->
          <script src="js/directives/uiAlertDirective.js"></script>
+         <script src="js/directives/uiDate.js"></script>
 
          <!--parametrização de ambiente -->
          <script src="js/value/configValue.js"></script>
@@ -42,10 +43,13 @@
     <body ng-controller="listaTelefonicaController">
         <div class="jumbotron">
             <h3>{{app}}</h3>
-            
-            <div ui-alert></div>
-            
-           
+
+            <!--
+            <ui-alert title="Ops, aconteceu um problema!">
+                Não foi possível carregar os dados !
+            </ui-alert>
+            -->
+
             <input class="form-control" type="text" ng-model="criterioBusca" placeholder="O que você está buscando">
             <table ng-show="contatos.length >0" class="table ">
                 <tr>
@@ -69,10 +73,11 @@
     
             </table>
             <hr/>
-            
+          
             <form name="contatoForm">
                 <input class="form-control" type="text" ng-model="contato.nome" name="nome" placeholder="nome" ng-required="true" ng-minlength="10">
                 <input class="form-control" type="text" ng-model="contato.telefone" name="telefone" placeholder="telefone" ng-required="true" ng-pattern="/^\d{4,5}-\d{4}$/">
+                <input class="form-control" type="text" ng-model="contato.data"name="data"placeholder="Data" ui-date>
                 <select class="form-control" ng-model="contato.operadora" ng-options="operadora.nome + '('+ (operadora.preco | currency) + ')'  for operadora in operadoras | orderBy:'nome'" ng-required="true">
                     <option value="">Selecione uma operadora</option>
                 </select>
